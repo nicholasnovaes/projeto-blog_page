@@ -54,7 +54,7 @@ p{
 }
 
 .nav-top{
-    padding: 2em 1.5em;
+    padding: 1.5em 3em 1.5em 1.5em;
 }
 
 .nav-list{
@@ -69,12 +69,12 @@ p{
     text-decoration: none;
     color: black;
     display: block;
-    padding: 0.5em;
     transition: all 1s;
+    padding: 1em;
 }
 
 .nav-list li a:hover{
-    background-color: #60379a88;
+    background-color: #cccccc9d;
 }
 
 .img-article{
@@ -85,4 +85,38 @@ footer{
     padding: 0.5em 0;
     text-align: center;
     border-top: 1px solid #ccc;
+}
+
+@media screen and (min-width:728px) {
+    
+    .menu-hamb{
+        display: none;
+    }
+
+    #nav{
+        display: block;
+    }
+    
+    .nav-top{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .nav-list{
+        display: flex;
+    }
+
+    .nav-list li{
+        margin: 0 0.5em;
+    }
+
+    .bk-yellow{
+        background-color: orange;
+        border-radius: 5px;
+    }
+
+    .bk-yellow:hover{
+        background-color: rgba(255, 166, 0, 0.63);
+    }
+
 }
